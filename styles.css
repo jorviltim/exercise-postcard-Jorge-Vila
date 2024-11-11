@@ -1,0 +1,22 @@
+body {
+	background: black;
+}
+
+/*este elemento le da contorno a todas 
+las partes de la pagina web ayudandoneos a delimitar */
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+}
+
+p {
+	color: blue;
+}
+
+.postcard {
+	/* aqui elcodigo*/
+	background: white;
+	width: 400px;
+	height: 300px;
+	margin: auto;
+}
