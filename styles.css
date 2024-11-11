@@ -22,6 +22,22 @@ p {
 }
 
 .postcard-header {
+	display: flex;
+	display: x;
+}
+
+.postcard-header h1 {
+	width: x;
+	margin: 0;
+}
+.postcard-header img {
+	/*con margin le muevo la imagen del texto lo quequiera ,
+    de hecho en auto la mueve todo a la derecha  sino puedes
+    añadir px pixeles para ver poco a poco como se separa del texto h1*/
+    margin-left: auto;
+	/* estas dos propiedades son para el tamaño de la imagen */
+    width: 50px;
+	height: 50px;
 }
 
 .postcard-body {
