@@ -1,27 +1,28 @@
 body {
+	display: flex;
 	background: black;
+	align-content: center;
 }
 
 /*este elemento le da contorno a todas 
 las partes de la pagina web ayudandoneos a delimitar */
+
 * {
 	border: 1px dashed red;
 	min-height: 10px;
-}
-
-p {
-	color: blue;
 }
 
 .postcard {
 	/*base fondo blanco de la postcard*/
 	background: white;
 	width: 400px;
-	height: 300px;
+	height: auto;
 	margin: auto;
+	border: 5px solid white;
 }
 
 .postcard-header {
+	background-color: grey;
 	/*base de la  cabecera  postcard*/
 	display: flex; /*posicionado especial para
      agrupar en  y ver alineado la imagen respecto al texto
@@ -33,14 +34,17 @@ p {
 .postcard-header h1 {
 	/*modificar titulo de div header*/
 	width: x;
-	margin: 0; /*modifica el margen del texto 
-    respecto al borde del div no quiero margenes,*/
+	margin-left: 5px;
+	margin-top: 10px; /*modifica el margen del texto 
+    respecto el hueco entre divypartesuperior del texto,*/
 }
 .postcard-header img {
 	/*con margin le muevo la imagen del texto lo quequiera ,
     de hecho en auto la mueve todo a la derecha  sino puedes
     añadir px pixeles para ver poco a poco como se separa del texto h1*/
 	margin-left: auto;
+	margin-right: 5px;
+	margin-top: 5px;
 	/* estas dos propiedades son para el tamaño de la imagen */
 	width: 50px;
 	height: 50px;
@@ -49,23 +53,58 @@ p {
 .postcard-body {
 	/* modifica base del div body*/
 	display: flex;
+	background-color: rgb(165, 165, 150);
+	border: 2px solid black;
 }
 
-.postcard-body-left {
+.body-left p:first-child {
 	/* modifica base del div body izq*/
 	display: x;
-	margin: 0;
+	margin-top: 0;
 }
 
-.postcard-body-right {
-	/* modifica base del div body der*/
+.body-left,
+.body-right {
+	/* modifica base del div body der e izq*/
 	display: x;
+	padding: 5px;
+}
+.body-right {
 	margin-left: auto;
+	align-content: center; /*alinear al medio del div */
+	background-color: rgb(182, 182, 180);
+}
+
+p {
+	/* modifica estilo de los parrafos*/
+	font-size: 16px;
+	font-family: cursive;
+	color: black;
+	background-color: rgb(182, 182, 180);
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 2px;
+	padding: 2px;
+}
+
+input {
+	/* modifica estilos de las inputs de los formularios*/
+	border: none;
+	border-bottom: 1px solid grey;
 }
 
 .postcard-footer {
 	/* modifica base del div footer*/
+	text-align: x;
 	display: flex;
-	display: x;
-	margin-left: auto;
+	background-color: grey;
+	border: 2px solid black;
+	width: 397px;
+	height: 35px;
+}
+button {
+	border-radius: 10px;
+	background-color: x;
+	padding: 5px;
+	margin: auto;
 }
