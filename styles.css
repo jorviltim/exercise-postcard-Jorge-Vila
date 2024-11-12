@@ -13,35 +13,52 @@ p {
 	color: blue;
 }
 
-.postcard {
-	/* aqui elcodigo*/
+.postcard { /*base fondo blanco de la postcard*/
 	background: white;
 	width: 400px;
 	height: 300px;
 	margin: auto;
 }
 
-.postcard-header {
-	display: flex;
+.postcard-header {/*base de la  cabecera  postcard*/
+	display: flex; /*posicionado especial para
+     agrupar en  y ver alineado la imagen respecto al texto
+     para mas info sobre felxbox :
+      https://www.youtube.com/watch?v=QFXSgGg-HWo */
 	display: x;
 }
 
-.postcard-header h1 {
+.postcard-header h1 {/*modificar titulo de div header*/
 	width: x;
-	margin: 0;
+	margin: 0;/*modifica el margen del texto 
+    respecto al borde del div no quiero margenes,*/
 }
 .postcard-header img {
 	/*con margin le muevo la imagen del texto lo quequiera ,
     de hecho en auto la mueve todo a la derecha  sino puedes
     añadir px pixeles para ver poco a poco como se separa del texto h1*/
-    margin-left: auto;
+	margin-left: auto;
 	/* estas dos propiedades son para el tamaño de la imagen */
-    width: 50px;
+	width: 50px;
 	height: 50px;
 }
 
-.postcard-body {
+.postcard-body {/* modifica base del div body*/
+	display: flex;
+	display: x;
 }
 
-.postcard-footer {
+.postcard-body-left {/* modifica base del div body izq*/
+	display: flex;
+	display: x;
+}
+
+.postcard-body-right {/* modifica base del div body der*/
+	display: flex;
+	display: x;
+}
+
+.postcard-footer {/* modifica base del div footer*/
+	display: flex;
+	display: x;
 }
