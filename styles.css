@@ -13,14 +13,16 @@ p {
 	color: blue;
 }
 
-.postcard { /*base fondo blanco de la postcard*/
+.postcard {
+	/*base fondo blanco de la postcard*/
 	background: white;
 	width: 400px;
 	height: 300px;
 	margin: auto;
 }
 
-.postcard-header {/*base de la  cabecera  postcard*/
+.postcard-header {
+	/*base de la  cabecera  postcard*/
 	display: flex; /*posicionado especial para
      agrupar en  y ver alineado la imagen respecto al texto
      para mas info sobre felxbox :
@@ -28,9 +30,10 @@ p {
 	display: x;
 }
 
-.postcard-header h1 {/*modificar titulo de div header*/
+.postcard-header h1 {
+	/*modificar titulo de div header*/
 	width: x;
-	margin: 0;/*modifica el margen del texto 
+	margin: 0; /*modifica el margen del texto 
     respecto al borde del div no quiero margenes,*/
 }
 .postcard-header img {
@@ -43,22 +46,26 @@ p {
 	height: 50px;
 }
 
-.postcard-body {/* modifica base del div body*/
+.postcard-body {
+	/* modifica base del div body*/
 	display: flex;
-	display: x;
 }
 
-.postcard-body-left {/* modifica base del div body izq*/
-	display: flex;
+.postcard-body-left {
+	/* modifica base del div body izq*/
 	display: x;
+	margin: 0;
 }
 
-.postcard-body-right {/* modifica base del div body der*/
-	display: flex;
+.postcard-body-right {
+	/* modifica base del div body der*/
 	display: x;
+	margin-left: auto;
 }
 
-.postcard-footer {/* modifica base del div footer*/
+.postcard-footer {
+	/* modifica base del div footer*/
 	display: flex;
 	display: x;
+	margin-left: auto;
 }
